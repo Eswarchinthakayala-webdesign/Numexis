@@ -196,7 +196,7 @@ function Section131() {
         </div>
 
         <div className="rounded bg-zinc-800 border border-zinc-700 p-3 mb-3">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 overflow-auto md:grid-cols-3 gap-3">
             <div className="md:col-span-2">
               <label className="text-xs text-zinc-400">Function f(x)</label>
               <Input value={expr} onChange={(e) => setExpr(e.target.value)} className="w-full bg-zinc-900 p-2 rounded text-zinc-100" />
@@ -215,7 +215,7 @@ function Section131() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-2 mt-2">
+              <div className="grid grid-cols-2 overflow-auto gap-2 mt-2">
                 <div>
                   <label className="text-xs text-zinc-400">tol</label>
                   <Input value={tol} onChange={(e) => setTol(Number(e.target.value))} className="bg-zinc-900 p-2 rounded text-zinc-100" />
@@ -397,7 +397,7 @@ function Section132() {
         </div>
 
         <div className="rounded bg-zinc-800 border border-zinc-700 p-3 mb-3">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 overflow-auto md:grid-cols-3 gap-3">
             <div className="md:col-span-2">
               <label className="text-xs text-zinc-400">Function f(x)</label>
               <Input value={expr} onChange={(e) => setExpr(e.target.value)} className="w-full bg-zinc-900 p-2 rounded text-zinc-100" />
@@ -419,7 +419,7 @@ function Section132() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-2 mt-2">
+              <div className="grid grid-cols-2 overflow-auto gap-2 mt-2">
                 <div>
                   <label className="text-xs text-zinc-400">tol</label>
                   <Input value={tol} onChange={(e) => setTol(Number(e.target.value))} className="bg-zinc-900 p-2 rounded text-zinc-100" />
@@ -563,7 +563,7 @@ function Section133() {
         </div>
 
         <div className="rounded bg-zinc-800 border border-zinc-700 p-3 mb-3">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 overflow-auto gap-3">
             <div className="md:col-span-2">
               <label className="text-xs text-zinc-400">Function f(x)</label>
               <Input value={expr} onChange={(e) => setExpr(e.target.value)} className="w-full bg-zinc-900 p-2 rounded text-zinc-100" />
@@ -572,7 +572,7 @@ function Section133() {
                 <label className="text-xs text-zinc-400"><input type="checkbox" checked={useAnalytic} onChange={(e) => setUseAnalytic(e.target.checked)} /> use analytic derivatives</label>
               </div>
               {useAnalytic && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
+                <div className="grid grid-cols-1 overflow-auto md:grid-cols-2 gap-2 mt-2">
                   <div>
                     <label className="text-xs text-zinc-400">f'(x)</label>
                     <Input value={dExpr} onChange={(e) => setDExpr(e.target.value)} className="w-full bg-zinc-900 p-2 rounded text-zinc-100" />
@@ -767,7 +767,7 @@ function Section134() {
         </div>
 
         <div className="rounded bg-zinc-800 border border-zinc-700 p-3 mb-3">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 overflow-auto md:grid-cols-3 gap-3">
             <div className="md:col-span-2">
               <label className="text-xs text-zinc-400">Function f(x)</label>
               <Input value={expr} onChange={(e) => setExpr(e.target.value)} className="w-full bg-zinc-900 p-2 rounded text-zinc-100" />
@@ -777,7 +777,7 @@ function Section134() {
               <Input value={a} onChange={(e) => setA(e.target.value)} className="w-full bg-zinc-900 p-2 rounded text-zinc-100" />
               <label className="text-xs text-zinc-400 mt-2">b</label>
               <Input value={b} onChange={(e) => setB(e.target.value)} className="w-full bg-zinc-900 p-2 rounded text-zinc-100" />
-              <div className="grid grid-cols-2 gap-2 mt-2">
+              <div className="grid grid-cols-2 overflow-auto gap-2 mt-2">
                 <Input value={tol} onChange={(e) => setTol(Number(e.target.value))} className="bg-zinc-900 p-2 rounded text-zinc-100" />
                 <Input value={maxIter} onChange={(e) => setMaxIter(Number(e.target.value))} className="bg-zinc-900 p-2 rounded text-zinc-100" />
               </div>
